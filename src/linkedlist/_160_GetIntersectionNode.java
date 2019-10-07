@@ -21,6 +21,7 @@ public class _160_GetIntersectionNode {
                 lenB--;
             }
         }
+        //注释此处的执行效率居然高于下面的写法，暂时不解
         //while (headA != headB) {
         //    headA = headA.next;
         //    headB = headB.next;

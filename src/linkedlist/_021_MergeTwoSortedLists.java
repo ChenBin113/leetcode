@@ -1,17 +1,12 @@
-package easy;
+package linkedlist;
+
+import util.ListNode;
 
 /**
  * @date 2019/9/26 23:46
  */
 //021
-public class _021_MergeTwoLists {
-    //Definition for singly-linked list.
-    class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-    }
-
+public class _021_MergeTwoSortedLists {
     /**
      * time: O(n)
      * space: O(1) / O(n)
