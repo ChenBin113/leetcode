@@ -1,6 +1,7 @@
-package bitmanipulation;
+package backtracking;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -33,5 +34,25 @@ public class _090_SubsetsII {
     public static void main(String[] args) {
         int[] nums = new int[]{1,2,3};
         subsetsWithDup(nums);
+    }
+
+    public List<List<Integer>> subsetsWithDup2(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (nums.length == 0 || nums == null) return res;
+        Arrays.sort(nums);
+        helper2(nums, res, new ArrayList<>(), 0);
+        return res;
+    }
+
+    public void helper2(int[] nums, List<List<Integer>> res, List<Integer> list, int index) {
+        res.add(new ArrayList<>(list));
+        for (int i = index; i < nums.length; i++) {
+            if (i > index && nums[i] == nums[i - 1]) {
+                continue;
+            }
+            list.add(nums[i]);
+        }
+        helper2(nums, res, list, index + 1);
+        list.remove(list.size() - 1);
     }
 }

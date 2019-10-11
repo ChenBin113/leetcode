@@ -1,4 +1,4 @@
-package bitmanipulation;
+package backtracking;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,6 +57,24 @@ public class _078_Subsets {
             curRes.remove(curRes.size() - 1);
         }
     }
+
+    public List<List<Integer>> subsets3(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (nums.length == 0 || nums == null) return res;
+        res.add(new ArrayList<>());
+        helper(nums, res, new ArrayList<>(), 0);
+        return res;
+    }
+
+    public void helper(int[] nums, List<List<Integer>> res, ArrayList<Integer> list, int i) {
+        if (i >= nums.length) return;
+        list.add(nums[i]);
+        res.add(new ArrayList(list));
+        helper(nums, res, list, i+1);
+        list.remove(list.size() - 1);
+        helper(nums, res, list, i+1);
+    }
+
 
     public static void main(String[] args) {
         int[] nums = new int[]{1,2,3};
