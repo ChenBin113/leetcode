@@ -6,9 +6,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
-/**
- * @date 2019/10/6 1:22
- */
 public class _5080_FindBinaryTreeSum {
     /**
      * 给出两棵二叉搜索树，请你从两棵树中各找出一个节点，使得这两个节点的值之和等于目标值 Target。

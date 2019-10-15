@@ -2,9 +2,6 @@ package linkedlist;
 
 import util.ListNode;
 
-/**
- * @date 2019/10/5 12:47
- */
 //非常重要，是链表类的基础
 public class _206_ReverseLinkedList {
     //就地逆置法

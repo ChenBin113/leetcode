@@ -1,8 +1,5 @@
 package util;
 
-/**
- * @date 2019/10/7 14:51
- */
 public class Node {
     public int val;
     public Node next;

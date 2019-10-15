@@ -3,9 +3,6 @@ package stack;
 import java.util.LinkedList;
 import java.util.Queue;
 
-/**
- * @date 2019/9/30 23:31
- */
 public class _255_ImplementStackusingQueues {
     private Queue<Integer> q1;
     private Queue<Integer> q2;

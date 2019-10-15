@@ -1,8 +1,5 @@
 package dp;
 
-/**
- * @date 2019/10/2 23:17
- */
 public class _053_MaximumSubarray {
     //time: O(n) space: O(n)
     public int maxSubArray(int[] nums) {

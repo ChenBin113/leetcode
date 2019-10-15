@@ -4,9 +4,6 @@ import util.ListNode;
 
 import java.util.PriorityQueue;
 
-/**
- * @date 2019/10/7 16:52
- */
 public class _023_MergekSortedLists {
     /**
      * 思路：

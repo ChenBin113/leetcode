@@ -1,8 +1,5 @@
 package testdemo;
 
-/**
- * @date 2019/10/12 11:43
- */
 public class StringBuilderTest01 {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();

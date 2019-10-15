@@ -1,8 +1,5 @@
 package greedy;
 
-/**
- * @date 2019/10/9 21:20
- */
 public class _376_WiggleSubsequence {
     /**
      * 使用有限状态机的思想解题

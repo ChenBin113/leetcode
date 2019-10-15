@@ -3,9 +3,6 @@ package greedy;
 import java.util.Arrays;
 import java.util.Comparator;
 
-/**
- * @date 2019/10/10 15:51
- */
 public class _452_MinimumNumberofArrowstoBurstBalloons {
     public int findMinArrowShots(int[][] points) {
         if (points.length == 0 || points == null) return 0;

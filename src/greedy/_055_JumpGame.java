@@ -1,8 +1,5 @@
 package greedy;
 
-/**
- * @date 2019/10/10 10:31
- */
 public class _055_JumpGame {
 
     public boolean canJump(int[] nums) {

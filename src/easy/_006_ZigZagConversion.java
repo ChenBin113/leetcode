@@ -1,6 +1,5 @@
 package easy;
 
-//006
 public class _006_ZigZagConversion {
     public String convert(String s, int numRows) {
         if (s.length() <= 1) return s;

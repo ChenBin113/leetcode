@@ -4,9 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-/**
- * @date 2019/10/7 21:26
- */
 public class _946_ValidateStackSequences {
     public boolean validateStackSequences(int[] pushed, int[] popped) {
         if (pushed.length != popped.length) return false;

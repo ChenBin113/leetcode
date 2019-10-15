@@ -2,9 +2,6 @@ package heap;
 
 import java.util.PriorityQueue;
 
-/**
- * @date 2019/10/9 0:51
- */
 public class _295_FindMedianfromDataStream {
     PriorityQueue<Integer> small_heap;
     PriorityQueue<Integer> big_heap;

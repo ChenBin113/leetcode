@@ -3,9 +3,6 @@ package backtracking;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @date 2019/10/4 11:25
- */
 //面试常考题目
 public class _078_Subsets {
     /*

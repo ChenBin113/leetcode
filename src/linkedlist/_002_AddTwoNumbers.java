@@ -2,7 +2,6 @@ package linkedlist;
 
 import util.ListNode;
 
-//002
 public class _002_AddTwoNumbers {
     /**
      * 占用内存37000k

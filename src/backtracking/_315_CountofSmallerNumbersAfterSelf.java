@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * @date 2019/10/12 18:13
- */
 public class _315_CountofSmallerNumbersAfterSelf {
     //暴力破解
     public List<Integer> countSmaller(int[] nums) {

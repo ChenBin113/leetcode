@@ -1,8 +1,5 @@
 package dp;
 
-/**
- * @date 2019/10/2 23:40
- */
 public class _070_ClimbingStairs {
     //time: O(n) space: O(n)/O(1)
     public int climbStairs(int n) {

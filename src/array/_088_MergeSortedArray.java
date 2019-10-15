@@ -1,8 +1,5 @@
 package array;
 
-/**
- * @date 2019/10/12 21:07
- */
 public class _088_MergeSortedArray {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int p = m + n - 1;

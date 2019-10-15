@@ -1,9 +1,5 @@
 package array;
 
-/**
- * @date 2019/9/28 15:05
- */
-//027
 public class _027_RemoveElement {
     /*
     [3,2,2,3] 3

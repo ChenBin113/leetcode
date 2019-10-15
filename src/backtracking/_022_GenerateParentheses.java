@@ -3,9 +3,6 @@ package backtracking;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @date 2019/10/12 9:45
- */
 public class _022_GenerateParentheses {
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<>();

@@ -2,9 +2,6 @@ package game;
 
 import java.util.Stack;
 
-/**
- * @date 2019/10/13 11:11
- */
 public class _5222_SplitaStringinBalancedStrings {
     public int balancedStringSplit(String s) {
         char[] c = s.toCharArray();

@@ -2,9 +2,6 @@ package stack;
 
 import java.util.Stack;
 
-/**
- * @date 2019/10/8 14:48
- */
 public class _224_BasicCalculator {
     public int calculate(String s) {
         Stack<Integer> stack = new Stack<>();

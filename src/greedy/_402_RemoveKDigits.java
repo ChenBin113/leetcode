@@ -2,9 +2,6 @@ package greedy;
 
 import java.util.Stack;
 
-/**
- * @date 2019/10/9 21:39
- */
 public class _402_RemoveKDigits {
     /**
      * 思路：

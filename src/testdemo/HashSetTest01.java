@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
-/**
- * @date 2019/10/11 17:03
- */
 public class HashSetTest01 {
     public static void main(String[] args) {
         HashSet<List<Integer>> set = new HashSet<>();

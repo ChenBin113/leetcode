@@ -3,9 +3,6 @@ package game;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @date 2019/10/5 23:49
- */
 public class _5081_StepForwardNumber {
 
     /**

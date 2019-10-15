@@ -2,9 +2,6 @@ package linkedlist;
 
 import util.ListNode;
 
-/**
- * @date 2019/10/5 15:19
- */
 public class _160_GetIntersectionNode {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if (headA == null || headB == null) return null;

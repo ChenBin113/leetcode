@@ -5,9 +5,6 @@ import util.ListNode;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * @date 2019/10/6 23:01
- */
 public class _142_LinkedListCycleII {
     public ListNode detectCycle(ListNode head) {
         Set<ListNode> set = new HashSet<>();

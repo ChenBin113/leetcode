@@ -1,9 +1,5 @@
 package easy;
 
-/**
- * @date 2019/9/21 21:58
- */
-//009
 public class _009_PalindromeNumber {
     /**
      * time O(n)

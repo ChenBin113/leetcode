@@ -7,9 +7,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-/**
- * @date 2019/10/4 21:50
- */
 public class _103_ZigTreeLevelOrderTraversal {
 
     /*

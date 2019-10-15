@@ -2,9 +2,6 @@ package heap;
 
 import java.util.PriorityQueue;
 
-/**
- * @date 2019/10/8 21:38
- */
 public class _215_KthLargestElementinanArray {
     public int findKthLargest(int[] nums, int k) {
         //使用优先队列实现堆，注意优先队列的方法，默认是小顶堆，即 a - b

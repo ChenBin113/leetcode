@@ -2,10 +2,6 @@ package stack;
 
 import java.util.Stack;
 
-/**
- * @date 2019/9/30 15:26
- */
-//155
 public class _155_MinStack {
     private Stack<Integer> stack;
     private Stack<Integer> minStack;

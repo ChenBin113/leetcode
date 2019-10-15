@@ -1,8 +1,5 @@
 package easy;
 
-/**
- * @date 2019/10/10 20:14
- */
 public class _134_GasStation {
     public int canCompleteCircuit(int[] gas, int[] cost) {
         int res = 0, start = 0, run = 0;

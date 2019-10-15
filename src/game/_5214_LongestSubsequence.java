@@ -3,9 +3,6 @@ package game;
 import java.util.HashMap;
 import java.util.HashSet;
 
-/**
- * @date 2019/10/6 10:46
- */
 public class _5214_LongestSubsequence {
     public int longestSubsequence(int[] arr, int difference) {
         if (arr.length == 1) return 1;

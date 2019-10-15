@@ -1,8 +1,5 @@
 package bitmanipulation;
 
-/**
- * @date 2019/10/4 10:36
- */
 public class _136_SingleNumber {
     /**
      * 异或 ^ 位运算解法

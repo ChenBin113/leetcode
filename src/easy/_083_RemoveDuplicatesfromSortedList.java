@@ -1,9 +1,5 @@
 package easy;
 
-/**
- * @date 2019/9/28 14:20
- */
-//083
 public class _083_RemoveDuplicatesfromSortedList {
     //Definition for singly-linked list.
     class ListNode {

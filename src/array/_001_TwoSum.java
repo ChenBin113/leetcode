@@ -2,7 +2,6 @@ package array;
 
 import java.util.HashMap;
 
-//001
 public class _001_TwoSum {
     /**
      * time O(n)

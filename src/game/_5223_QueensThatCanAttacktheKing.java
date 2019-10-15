@@ -5,9 +5,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/**
- * @date 2019/10/13 11:38
- */
 public class _5223_QueensThatCanAttacktheKing {
     public List<List<Integer>> queensAttacktheKing(int[][] queens, int[] king) {
         List<List<Integer>> res = new ArrayList<>();

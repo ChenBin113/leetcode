@@ -1,8 +1,5 @@
 package heap;
 
-/**
- * @date 2019/10/9 1:27
- */
 public class Test295 {
     public static void main(String[] args) {
         _295_FindMedianfromDataStream obj = new _295_FindMedianfromDataStream();

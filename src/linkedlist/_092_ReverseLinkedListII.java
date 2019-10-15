@@ -2,9 +2,6 @@ package linkedlist;
 
 import util.ListNode;
 
-/**
- * @date 2019/10/5 14:58
- */
 public class _092_ReverseLinkedListII {
     public ListNode reverseBetween(ListNode head, int m, int n) {
         int change_len = n - m + 1; //改变的节点个数

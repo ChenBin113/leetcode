@@ -1,9 +1,5 @@
 package easy;
 
-/**
- * @date 2019/9/26 21:11
- */
-//013
 public class _013_LongestCommonPrefix {
     /**
      * time: O(n)

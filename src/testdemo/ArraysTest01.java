@@ -3,9 +3,6 @@ package testdemo;
 import java.util.Arrays;
 import java.util.Comparator;
 
-/**
- * @date 2019/10/10 15:52
- */
 public class ArraysTest01 {
     public static void main(String[] args) {
         int[] array1 = {2, 5, 1, 9, 4, 6};

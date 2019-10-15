@@ -1,8 +1,5 @@
 package game;
 
-/**
- * @date 2019/10/6 11:14
- */
 public class _5213_MinCostToMoveChips {
     public int minCostToMoveChips(int[] chips) {
         if (chips.length == 1) return 0;

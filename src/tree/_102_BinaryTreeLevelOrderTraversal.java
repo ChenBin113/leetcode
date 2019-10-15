@@ -7,9 +7,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-/**
- * @date 2019/10/4 19:02
- */
 //二叉树的层次遍历，非常基础，需要掌握和精通
 public class _102_BinaryTreeLevelOrderTraversal {
 

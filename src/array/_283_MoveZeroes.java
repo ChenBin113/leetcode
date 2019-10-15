@@ -1,8 +1,5 @@
 package array;
 
-/**
- * @date 2019/10/4 18:26
- */
 public class _283_MoveZeroes {
     public void moveZeroes(int[] nums) {
         if (nums == null || nums.length == 0) return;

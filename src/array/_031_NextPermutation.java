@@ -1,8 +1,5 @@
 package array;
 
-/**
- * @date 2019/10/3 23:41
- */
 public class _031_NextPermutation {
     public static void nextPermutation(int[] nums) {
         //边界

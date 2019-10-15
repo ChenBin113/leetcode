@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
-/**
- * @date 2019/10/12 10:18
- */
 public class _051_NQueens {
 
     //没得出结果，先放着

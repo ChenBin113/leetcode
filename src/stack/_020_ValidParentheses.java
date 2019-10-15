@@ -2,10 +2,6 @@ package stack;
 
 import java.util.Stack;
 
-/**
- * @date 2019/9/26 22:35
- */
-//020
 public class _020_ValidParentheses {
     /*
     学习了 Stack

@@ -1,8 +1,5 @@
 package greedy;
 
-/**
- * @date 2019/10/10 11:17
- */
 public class _045JumpGameII {
     public int jump(int[] nums) {
         if (nums.length < 2) return 0;

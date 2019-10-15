@@ -4,9 +4,6 @@ import util.Node;
 
 import java.util.HashMap;
 
-/**
- * @date 2019/10/7 14:22
- */
 public class _138_CopyListWithRandomPointer {
     public Node copyRandomList(Node head) {
         if (head == null) return null;

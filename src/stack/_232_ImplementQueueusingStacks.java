@@ -2,9 +2,6 @@ package stack;
 
 import java.util.Stack;
 
-/**
- * @date 2019/10/1 15:12
- */
 public class _232_ImplementQueueusingStacks {
     //双栈法
     private Stack<Integer> stack1;

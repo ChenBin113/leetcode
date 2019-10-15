@@ -1,9 +1,5 @@
 package easy;
 
-/**
- * @date 2019/9/8 0:03
- */
-//007
 public class _007_ReverseInteger {
     /*
     主要还是溢出问题，考察整型变量的范围

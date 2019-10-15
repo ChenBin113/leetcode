@@ -2,9 +2,6 @@ package linkedlist;
 
 import util.ListNode;
 
-/**
- * @date 2019/10/7 10:48
- */
 public class _086_PartitionList {
     /**
      * 思路：

@@ -1,9 +1,5 @@
 package array;
 
-/**
- * @date 2019/9/28 14:10
- */
-//026
 public class _026_RemoveDuplicatesfromSortedArray {
     /*
     边界

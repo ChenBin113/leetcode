@@ -1,9 +1,5 @@
 package array;
 
-/**
- * @date 2019/9/28 16:08
- */
-//035
 public class _035_SearchInsertPosition {
     /**
      * time: O(n)

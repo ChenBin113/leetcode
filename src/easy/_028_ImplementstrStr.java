@@ -1,9 +1,5 @@
 package easy;
 
-/**
- * @date 2019/9/28 15:32
- */
-//028
 public class _028_ImplementstrStr {
 
     /**

@@ -3,9 +3,6 @@ package game;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @date 2019/10/6 1:20
- */
 public class _5079_ThreeArrays {
     /**
      * 给出三个均为 严格递增排列 的整数数组 arr1，arr2 和 arr3。

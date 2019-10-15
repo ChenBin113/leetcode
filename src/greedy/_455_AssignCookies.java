@@ -2,9 +2,6 @@ package greedy;
 
 import java.util.Arrays;
 
-/**
- * @date 2019/10/9 17:43
- */
 public class _455_AssignCookies {
     /**
      * 注意：该题目没有说，两个数组是排序好的，需要先排序

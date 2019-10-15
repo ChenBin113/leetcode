@@ -1,6 +1,5 @@
 package sort;
 
-//004
 public class _004_MediumOfTwoSortedArrays {
     /**
      * num1 3 5 | 8 9           size  4
