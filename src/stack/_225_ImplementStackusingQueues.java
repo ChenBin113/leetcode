@@ -3,13 +3,13 @@ package stack;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class _255_ImplementStackusingQueues {
+public class _225_ImplementStackusingQueues {
     private Queue<Integer> q1;
     private Queue<Integer> q2;
     private int top;
 
     /** Initialize your data structure here. */
-    public _255_ImplementStackusingQueues() {
+    public _225_ImplementStackusingQueues() {
          q1 = new LinkedList<>();
          q2 = new LinkedList<>();
     }

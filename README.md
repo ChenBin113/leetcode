@@ -1,5 +1,7 @@
 # LeetCode 题解
 
+[TOC]
+
 ## 链表
 
 - 相关代码 [src/linkedlist](src/linkedlist)
@@ -86,19 +88,24 @@
 | 034  | 区间查找             | [FindFirstandLastPositionofElementinSortedArray](src/binarysearch/_034_FindFirstandLastPositionofElementinSortedArray.java) |
 | 035  | 插入位置             | [SearchInsertPosition](src/binarysearch/_035_SearchInsertPosition.java) |
 | 315  | 逆序数               | [CountofSmallerNumbersAfterSelf](src/backtracking/_315_CountofSmallerNumbersAfterSelf.java) |
-| 449  | 二叉查找树编码与解码 | [SerializeandDeserializeBST](src/tree/_449_SerializeandDeserializeBST.java) |
+| 449  | 二叉查找树编码与解码 | [SerializeandDeserializeBST](src/backtracking/_449_SerializeandDeserializeBST.java) |
 
 ## 哈希表与字符串
 
 - 相关代码 [src/hashtable](src/hashtable)
 
-| #    |                | Title                                                        |
-| :--- | -------------- | ------------------------------------------------------------ |
-| 049  | 同字符词语分组 | [GroupAnagrams](src/hashtable/_049_GroupAnagrams.java)       |
-| 290  | 词语模式       | [WordPattern](src/hashtable/_290_WordPattern.java)           |
-| 409  | 最长回文串     | [LongestPalindrome](src/hashtable/_409_LongestPalindrome.java) |
+| #    |                      | Title                                                        | TAG      |
+| :--- | -------------------- | ------------------------------------------------------------ | -------- |
+| 003  | 无重复字符的最长子串 | [LongestSubstringWithoutRepeatingCharacters](src/hashtable/_003_LongestSubstringWithoutRepeatingCharacters.java) | 双指针   |
+| 049  | 同字符词语分组       | [GroupAnagrams](src/hashtable/_049_GroupAnagrams.java)       |          |
+| 076  | 最小覆盖子串         | [MinimumWindowSubstring](src/hashtable/_076_MinimumWindowSubstring.java) | 双指针   |
+| 187  | 重复的 DNA 序列      | [RepeatedDNASequences](src/hashtable/_187_RepeatedDNASequences.java) | 滑动窗口 |
+| 290  | 词语模式             | [WordPattern](src/hashtable/_290_WordPattern.java)           |          |
+| 409  | 最长回文串           | [LongestPalindrome](src/hashtable/_409_LongestPalindrome.java) |          |
 
-## 说明
+## 搜索
+
+# 说明
 
 - 项目记录了一些解答  LeetCode 的 Java 代码，部分题目使用了 main 方法进行调试
 - 对于 leetcode 包中的类，命名前添加了序号，方便查找，故不完全遵循 Java 中类命名方法
@@ -109,6 +116,10 @@
 ### game
 
 - 包含 LeetCode 竞赛题目
+
+### testdemo
+
+- 测试类的使用方法
 
 ### util
 
