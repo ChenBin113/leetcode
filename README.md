@@ -95,7 +95,7 @@
 - 相关代码 [src/hashtable](src/hashtable)
 
 | #    |                      | Title                                                        | TAG      |
-| :--- | -------------------- | ------------------------------------------------------------ | -------- |
+| --- | -------------------- | ------------------------------------------------------------ | -------- |
 | 003  | 无重复字符的最长子串 | [LongestSubstringWithoutRepeatingCharacters](src/hashtable/_003_LongestSubstringWithoutRepeatingCharacters.java) | 双指针   |
 | 049  | 同字符词语分组       | [GroupAnagrams](src/hashtable/_049_GroupAnagrams.java)       |          |
 | 076  | 最小覆盖子串         | [MinimumWindowSubstring](src/hashtable/_076_MinimumWindowSubstring.java) | 双指针   |
@@ -105,22 +105,41 @@
 
 ## 搜索
 
+- 相关代码 [src/search](src/search)
+
+| #    |                      | Title                                                        | TAG      |
+| --- | -------------------- | ------------------------------------------------------------ | -------- |
+| 127 | 词语阶梯 | [WordLadder](src/search/_127_WordLadder.java) | BFS |
+| 200 | 岛屿数量 | [NumberofIslands](src/search/_200_NumberofIslands.java) | BFS/DFS |
+|      |          |                                                         |          |
+
 # 说明
 
 - 项目记录了一些解答  LeetCode 的 Java 代码，部分题目使用了 main 方法进行调试
 - 对于 leetcode 包中的类，命名前添加了序号，方便查找，故不完全遵循 Java 中类命名方法
 - 题目解答的部分思路是按照 [LeetCode 刷题](https://www.bilibili.com/video/av29912609) 视频来的
 
-## package 包说明
+## 项目说明
 
-### game
+```
+.
+└─src
+    ├─array
+    ├─backtracking
+    ├─binarysearch
+    ├─bitmanipulation
+    ├─dp
+    ├─easy
+    ├─game  -- 包含 LeetCode 竞赛题目
+    ├─greedy
+    ├─hashtable
+    ├─heap
+    ├─linkedlist
+    ├─search  -- BFS & DFS
+    ├─sort
+    ├─stack
+    ├─testdemo  -- 测试类的使用方法
+    ├─tree
+    └─util  -- 包含一些需要使用的数据结构类
+```
 
-- 包含 LeetCode 竞赛题目
-
-### testdemo
-
-- 测试类的使用方法
-
-### util
-
-- 包含一些需要使用的数据结构类
