@@ -2,7 +2,7 @@
 
 ## 目录
 
-- [LeetCode 题解](#leetcode 题解)
+- [LeetCode 题解](#leetcode-题解)
   - [链表](#链表)
   - [栈、队列](#栈、队列)
   - [堆](#堆)
