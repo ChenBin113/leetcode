@@ -1,6 +1,19 @@
 # LeetCode 题解
 
-[TOC]
+## 目录
+
+- [LeetCode 题解](#leetcode 题解)
+  - [链表](#链表)
+  - [栈、队列](#栈、队列)
+  - [堆](#堆)
+  - [贪心算法](#贪心算法)
+  - [递归、回溯、分治](#递归、回溯、分治)
+  - [二叉树与图](#二叉树与图)
+  - [二分查找与二叉查找/排序树](#二分查找与二叉查找/排序树)
+  - [哈希表与字符串](#哈希表与字符串)
+  - [搜索](#搜索)
+- [说明](#说明)
+  - [项目说明](#项目说明)
 
 ## 链表
 
@@ -17,7 +30,7 @@
 | 141  | 链表求环             | [LinkedListCycle](src/linkedlist/_141_LinkedListCycle.java)  |
 | 142  | 链表求环             | [LinkedListCycleII](src/linkedlist/_142_LinkedListCycleII.java) |
 | 160  | 求两个链表交点       | [GetIntersectionNode](src/linkedlist/_160_GetIntersectionNode.java) |
-| 206  | 链表逆序             | [ReverseLinkedList](src/binarysearch/_206_ReverseLinkedList.java)  |
+| 206  | 链表逆序             | [ReverseLinkedList](src/binarysearch/_206_ReverseLinkedList.java) |
 
 ## 栈、队列
 
