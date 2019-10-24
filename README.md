@@ -122,7 +122,7 @@
 
 | #    |                      | Title                                                        | TAG      |
 | --- | -------------------- | ------------------------------------------------------------ | -------- |
-| 126 | 词语阶梯2 | [WordLadderII](src/search/_126_WordLadderII.java) |  |
+| 126❤ | 词语阶梯2 | [WordLadderII](src/search/_126_WordLadderII.java) | fail to pass |
 | 127 | 词语阶梯 | [WordLadder](src/search/_127_WordLadder.java) | BFS |
 | 200 | 岛屿数量 | [NumberofIslands](src/search/_200_NumberofIslands.java) | BFS/DFS |
 
