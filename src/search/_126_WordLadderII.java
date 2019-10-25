@@ -19,6 +19,7 @@ public class _126_WordLadderII {
         LinkedList<Integer> end_word_pos = new LinkedList<>();
         BFS_graph(beginWord, endWord, graph, queue, end_word_pos);
         List<List<String>> result = new LinkedList<>();
+        System.out.println(end_word_pos);
         for (int i = 0; i < end_word_pos.size(); i++) {
             int pos = end_word_pos.get(i);
             LinkedList<String> path = new LinkedList<>();
@@ -43,7 +44,8 @@ public class _126_WordLadderII {
             if (min_step != 0 && min_step < step) {
                 break;
             }
-            if (node == endWord) {
+            //此处字符串比较需要 equals 方法
+            if (node.equals(endWord)) {
                 min_step = step;
                 end_word_pos.add(front);
             }
