@@ -30,7 +30,8 @@
 | 141  | 链表求环             | [LinkedListCycle](src/linkedlist/_141_LinkedListCycle.java)  |
 | 142  | 链表求环             | [LinkedListCycleII](src/linkedlist/_142_LinkedListCycleII.java) |
 | 160  | 求两个链表交点       | [GetIntersectionNode](src/linkedlist/_160_GetIntersectionNode.java) |
-| 206  | 链表逆序             | [ReverseLinkedList](src/binarysearch/_206_ReverseLinkedList.java) |
+| 206  | 链表逆序             | [ReverseLinkedList](src/linkedlist/_206_ReverseLinkedList.java) |
+| 876  |                      | [MiddleoftheLinkedList](src/linkedlist/_876_MiddleoftheLinkedList.java) |
 
 ## 栈、队列
 
