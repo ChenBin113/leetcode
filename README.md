@@ -40,6 +40,7 @@
 | #    |                   | Title                                                        |
 | ---- | ----------------- | ------------------------------------------------------------ |
 | 020  |                   | [ValidParentheses](stack/_020_ValidParentheses.java)         |
+| 071  |                   | [SimplifyPath](src/stack/_071_SimplifyPath.java)             |
 | 094  |                   | [BinaryTreeeInorderTraversal](src/stack/_094_BinaryTreeeInorderTraversal.java) |
 | 155  | 包含 min 函数的栈 | [MinStack](src/stack/_155_MinStack.java)                     |
 | 224  | 简单的计算器      | [BasicCalculator](src/stack/_224_BasicCalculator.java)       |
