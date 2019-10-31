@@ -19,19 +19,19 @@
 
 - 相关代码 [src/linkedlist](src/linkedlist)
 
-| #    |                      | Title                                                        |
-| ---- | -------------------- | ------------------------------------------------------------ |
-| 002  |                      | [AddTwoNumbers](src/linkedlist/_002_AddTwoNumbers.java)      |
-| 021  | 排序链表的合并       | [MergeTwoSortedLists](src/linkedlist/_021_MergeTwoSortedLists.java) |
-| 023  | 排序链表的合并       | [MergekSortedLists](src/linkedlist/_023_MergekSortedLists.java) |
-| 086  | 链表划分             | [PartitionList](src/linkedlist/_086_PartitionList.java)      |
-| 092  | 链表逆序             | [ReverseLinkedListII](src/linkedlist/_092_ReverseLinkedListII.java) |
-| 138  | 复杂的链表的深度拷贝 | [CopyListWithRandomPointer](src/linkedlist/_138_CopyListWithRandomPointer.java) |
-| 141  | 链表求环             | [LinkedListCycle](src/linkedlist/_141_LinkedListCycle.java)  |
-| 142  | 链表求环             | [LinkedListCycleII](src/linkedlist/_142_LinkedListCycleII.java) |
-| 160  | 求两个链表交点       | [GetIntersectionNode](src/linkedlist/_160_GetIntersectionNode.java) |
-| 206  | 链表逆序             | [ReverseLinkedList](src/linkedlist/_206_ReverseLinkedList.java) |
-| 876  |                      | [MiddleoftheLinkedList](src/linkedlist/_876_MiddleoftheLinkedList.java) |
+| #    |      |                      | Title                                                        |                            |
+| ---- | ---- | -------------------- | ------------------------------------------------------------ | -------------------------- |
+| 002  |      |                      | [AddTwoNumbers](src/linkedlist/_002_AddTwoNumbers.java)      |                            |
+| 021  |      | 排序链表的合并       | [MergeTwoSortedLists](src/linkedlist/_021_MergeTwoSortedLists.java) |                            |
+| 023  |      | 排序链表的合并       | [MergekSortedLists](src/linkedlist/_023_MergekSortedLists.java) |                            |
+| 086  |      | 链表划分             | [PartitionList](src/linkedlist/_086_PartitionList.java)      |                            |
+| 092  | ★★☆  | 链表逆序             | [ReverseLinkedListII](src/linkedlist/_092_ReverseLinkedListII.java) |                            |
+| 138  |      | 复杂的链表的深度拷贝 | [CopyListWithRandomPointer](src/linkedlist/_138_CopyListWithRandomPointer.java) |                            |
+| 141  |      | 链表求环             | [LinkedListCycle](src/linkedlist/_141_LinkedListCycle.java)  |                            |
+| 142  |      | 链表求环             | [LinkedListCycleII](src/linkedlist/_142_LinkedListCycleII.java) |                            |
+| 160  |      | 求两个链表交点       | [GetIntersectionNode](src/linkedlist/_160_GetIntersectionNode.java) |                            |
+| 206  | ★☆☆  | 链表逆序             | [ReverseLinkedList](src/linkedlist/_206_ReverseLinkedList.java) | 就地逆置法；头插法；递归法 |
+| 876  |      |                      | [MiddleoftheLinkedList](src/linkedlist/_876_MiddleoftheLinkedList.java) |                            |
 
 ## 栈、队列
 
