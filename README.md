@@ -29,7 +29,7 @@
 | 138  |      | 复杂的链表的深度拷贝 | [CopyListWithRandomPointer](src/linkedlist/_138_CopyListWithRandomPointer.java) |                            |
 | 141  |      | 链表求环             | [LinkedListCycle](src/linkedlist/_141_LinkedListCycle.java)  |                            |
 | 142  |      | 链表求环             | [LinkedListCycleII](src/linkedlist/_142_LinkedListCycleII.java) |                            |
-| 160  |      | 求两个链表交点       | [GetIntersectionNode](src/linkedlist/_160_GetIntersectionNode.java) |                            |
+| 160  | ★☆☆  | 求两个链表交点       | [GetIntersectionNode](src/linkedlist/_160_GetIntersectionNode.java) |                            |
 | 206  | ★☆☆  | 链表逆序             | [ReverseLinkedList](src/linkedlist/_206_ReverseLinkedList.java) | 就地逆置法；头插法；递归法 |
 | 876  |      |                      | [MiddleoftheLinkedList](src/linkedlist/_876_MiddleoftheLinkedList.java) |                            |
 
