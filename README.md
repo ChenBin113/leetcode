@@ -30,6 +30,7 @@
 | 019  | ★★☆  |                      | [RemoveNthNodeFromEndofList](src/linkedlist/_019_RemoveNthNodeFromEndofList.java) | 双指针                     |
 | 021  |      | 排序链表的合并       | [MergeTwoSortedLists](src/linkedlist/_021_MergeTwoSortedLists.java) |                            |
 | 023  |      | 排序链表的合并       | [MergekSortedLists](src/linkedlist/_023_MergekSortedLists.java) |                            |
+| 024  | ★★☆  | 两两交换链表中的节点 | [SwapNodesinPairs](src/linkedlist/_024_SwapNodesinPairs.java) | 递归                       |
 | 086  |      | 链表划分             | [PartitionList](src/linkedlist/_086_PartitionList.java)      |                            |
 | 092  | ★★☆  | 链表逆序             | [ReverseLinkedListII](src/linkedlist/_092_ReverseLinkedListII.java) |                            |
 | 138  |      | 复杂的链表的深度拷贝 | [CopyListWithRandomPointer](src/linkedlist/_138_CopyListWithRandomPointer.java) |                            |
