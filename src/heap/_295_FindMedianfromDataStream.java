@@ -12,7 +12,8 @@ public class _295_FindMedianfromDataStream {
         big_heap = new PriorityQueue<>((a, b) -> b - a);
     }
 
-    public void addNum(int num) {
+    // version 1.0
+    /*public void addNum(int num) {
         if (big_heap.isEmpty() && small_heap.isEmpty()) {
             big_heap.offer(num);
             return;
@@ -48,6 +49,28 @@ public class _295_FindMedianfromDataStream {
                 big_heap.offer(small_heap.peek());
                 small_heap.poll();
                 small_heap.offer(num);
+            }
+        }
+    }
+     */
+
+    // version 2.0
+    public void addNum(int num) {
+        if (big_heap.isEmpty() && small_heap.isEmpty()) {
+            big_heap.offer(num);
+            return;
+        }
+        if (num <= big_heap.peek()) {
+            big_heap.offer(num);
+        } else {
+            small_heap.offer(num);
+        }
+
+        if (Math.abs(big_heap.size() - small_heap.size()) > 1) {
+            if (big_heap.size() > small_heap.size()) {
+                small_heap.offer(big_heap.poll());
+            } else {
+                big_heap.offer(small_heap.poll());
             }
         }
     }
