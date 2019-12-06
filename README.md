@@ -23,11 +23,11 @@
 
 ## 链表
 
-- 相关代码 [src/linkedlist](./src/linkedlist) sd
+- 相关代码 [src/linkedlist](./src/linkedlist)
 
 | #    |      |                      | Title                                                        |                            |
 | ---- | ---- | -------------------- | ------------------------------------------------------------ | -------------------------- |
-| 002  |      |                      | [AddTwoNumbers](src/linkedlist/_002_AddTwoNumbers.java)      |                            |
+| 002  | ★★☆  |                      | [AddTwoNumbers](src/linkedlist/_002_AddTwoNumbers.java)      |                            |
 | 019  | ★★☆  |                      | [RemoveNthNodeFromEndofList](src/linkedlist/_019_RemoveNthNodeFromEndofList.java) | 双指针                     |
 | 021  |      | 排序链表的合并       | [MergeTwoSortedLists](src/linkedlist/_021_MergeTwoSortedLists.java) |                            |
 | 023  |      | 排序链表的合并       | [MergekSortedLists](src/linkedlist/_023_MergekSortedLists.java) |                            |
