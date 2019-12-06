@@ -1,4 +1,4 @@
-# LeetCode 题解 - 链表 - 
+# LeetCode - 链表 - 
 
 <!-- MarkdownTOC levels="1,2,3" autolink="true"  autoanchor="true" -->
 
