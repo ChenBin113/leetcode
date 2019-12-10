@@ -3,12 +3,12 @@
 <!-- MarkdownTOC levels="1,2,3" autolink="true"  autoanchor="true" -->
 
 - [_002_AddTwoNumbers](#002addtwonumbers)
-	- [要点](#%E8%A6%81%E7%82%B9)
+    - [要点](#%E8%A6%81%E7%82%B9)
 
 <!-- /MarkdownTOC -->
 
 
-- 相关代码 [src/linkedlist](./src/linkedlist)
+- [相关代码](../src/linkedlist)
 
 <a id="002addtwonumbers"></a>
 ## _002_AddTwoNumbers
