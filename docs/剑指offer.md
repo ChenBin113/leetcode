@@ -151,78 +151,94 @@ public class Solution {
 }
 ```
 
+## 三
+
+```java
+public class Solution {
+    public static String replaceSpace(StringBuffer str) {
+        int p1 = str.length() - 1;
+        for (int i = 0; i <= p1; i++) {
+            if (str.charAt(i) == ' ') {
+                str.append("  ");
+            }
+        }
+        int p2 = str.length() - 1;
+        while (p1 >= 0 && p1 < p2) {
+            char c = str.charAt(p1--);
+            if (c == ' ') {
+                str.setCharAt(p2--, '0');
+                str.setCharAt(p2--, '2');
+                str.setCharAt(p2--, '%');
+            } else {
+                str.setCharAt(p2--, c);
+            }
+        }
+        return str.toString();
+    }
+}
+```
 
 
-# 03.数组中重复的数字
+
+# 06. 从尾到头打印链表
 
 ## 一
 
 ```java
 public class Solution {
-    public boolean duplicate(int numbers[],int length,int [] duplication) {
-        if (numbers == null || numbers.length == 0) {
-			return false;
-		}
-		for (int i = 0; i  numbers.length; i++) {
-			int tmp = numbers[i];
-			if (tmp == i) {
-				continue;
-			} else {
-				if (tmp == numbers[tmp]) {
-                    duplication[0] = tmp;
-					return true;
-				} else {
-					swap(tmp, numbers[tmp], numbers);
-					continue;
-				}
-			}
-		}
-		return false;
-    
+    public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+        ArrayList<Integer> ret = new ArrayList<>();
+        if (listNode != null) {
+            ret.addAll(printListFromTailToHead(listNode.next));
+            ret.add(listNode.val);
+        }
+        return ret;
     }
-    
-    public void swap(int i, int j, int[] numbers) {
-		int tmp = numbers[i];
-		numbers[i] = numbers[j];
-		numbers[j] = tmp;
-	}
-}
+
 ```
 
 ## 二
 
 ```java
 public class Solution {
-    public boolean duplicate(int numbers[],int length,int [] duplication) {
-        if (numbers == null || numbers.length == 0) {
-			return false;
-		}
-		for (int i = 0; i < numbers.length; i++) {
-            while (i != numbers[i]) {
-                if (numbers[numbers[i]] == numbers[i]) {
-                    duplication[0] = numbers[i];
-                    return true;
-                }
-                swap(i, numbers[i], numbers);
-            }
-		}
-		return false;
-    
+    public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+        ListNode head  = new ListNode(0);
+        while (listNode != null) {
+            ListNode memo = listNode.next;
+            listNode.next = head.next;
+            head.next = listNode;
+            listNode = memo;
+        }
+        ArrayList<Integer> ret = new ArrayList<>();
+        while (head.next != null) {
+            ret.add(head.next.val);
+            head = head.next;
+        }
+        return ret;
     }
-    
-    public void swap(int i, int j, int[] numbers) {
-		int tmp = numbers[i];
-		numbers[i] = numbers[j];
-		numbers[j] = tmp;
-	}
 }
 ```
 
-# 
+## 三
 
-
-
-
+```java
+import java.util.ArrayList;
+import java.util.Stack;
+public class Solution {
+    public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+        Stack<Integer> stack = new Stack<>();
+        while (listNode != null) {
+            stack.push(listNode.val);
+            listNode = listNode.next;
+        }
+        ArrayList<Integer> ret = new ArrayList<>();
+        while (!stack.isEmpty()) {
+            ret.add(stack.pop());
+        }
+        return ret;
+    }
+}
+```
 
 
 
