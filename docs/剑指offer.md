@@ -242,39 +242,56 @@ public class Solution {
 
 
 
-# 03.数组中重复的数字
+# 07. 重建二叉树
+
+## 一
+
+```java
+import java.util.Arrays;
+public class Solution {
+    public TreeNode reConstructBinaryTree(int [] pre,int [] in) {
+        if (pre.length == 0 || in.length == 0) return null;
+        TreeNode root = new TreeNode(pre[0]);
+        for (int i = 0; i < in.length; i++) {
+            if (in[i] == pre[0]) {
+                root.left = reConstructBinaryTree(Arrays.copyOfRange(pre,1,i + 1), Arrays.copyOfRange(in, 0, i));
+                root.right = reConstructBinaryTree(Arrays.copyOfRange(pre,i+1,pre.length), Arrays.copyOfRange(in, i+1, in.length));
+                break;
+            }
+        }
+        return root;
+    }
+}
+```
+
+
+
+# 08. 二叉树的下一个结点
 
 ## 一
 
 ```java
 public class Solution {
-    public boolean duplicate(int numbers[],int length,int [] duplication) {
-        if (numbers == null || numbers.length == 0) {
-			return false;
-		}
-		for (int i = 0; i  numbers.length; i++) {
-			int tmp = numbers[i];
-			if (tmp == i) {
-				continue;
-			} else {
-				if (tmp == numbers[tmp]) {
-                    duplication[0] = tmp;
-					return true;
-				} else {
-					swap(tmp, numbers[tmp], numbers);
-					continue;
-				}
-			}
-		}
-		return false;
-    
+    public TreeLinkNode GetNext(TreeLinkNode pNode)
+    {
+        if (pNode.right != null) {
+            pNode = pNode.right;
+            while(pNode.left != null) {
+                pNode = pNode.left;
+            }
+            return pNode;
+        }
+        if (pNode.next != null && pNode.next.left == pNode) {
+            return pNode.next;
+        }
+        if (pNode.next != null && pNode.next.right == pNode) {
+            while (pNode.next != null && pNode.next.right == pNode) {
+                pNode = pNode.next;
+            }
+            return pNode.next;
+        }
+        return null;
     }
-    
-    public void swap(int i, int j, int[] numbers) {
-		int tmp = numbers[i];
-		numbers[i] = numbers[j];
-		numbers[j] = tmp;
-	}
 }
 ```
 
@@ -282,105 +299,28 @@ public class Solution {
 
 ```java
 public class Solution {
-    public boolean duplicate(int numbers[],int length,int [] duplication) {
-        if (numbers == null || numbers.length == 0) {
-			return false;
-		}
-		for (int i = 0; i < numbers.length; i++) {
-            while (i != numbers[i]) {
-                if (numbers[numbers[i]] == numbers[i]) {
-                    duplication[0] = numbers[i];
-                    return true;
-                }
-                swap(i, numbers[i], numbers);
+    public TreeLinkNode GetNext(TreeLinkNode pNode)
+    {   
+        //有右子树
+        if (pNode.right != null) {
+            TreeLinkNode node = pNode.right;
+            while (node.left != null) {
+                node = node.left;
             }
-		}
-		return false;
-    
-    }
-    
-    public void swap(int i, int j, int[] numbers) {
-		int tmp = numbers[i];
-		numbers[i] = numbers[j];
-		numbers[j] = tmp;
-	}
-}
-```
-
-# 
-
-
-
-
-
-# 03.数组中重复的数字
-
-## 一
-
-```java
-public class Solution {
-    public boolean duplicate(int numbers[],int length,int [] duplication) {
-        if (numbers == null || numbers.length == 0) {
-			return false;
-		}
-		for (int i = 0; i  numbers.length; i++) {
-			int tmp = numbers[i];
-			if (tmp == i) {
-				continue;
-			} else {
-				if (tmp == numbers[tmp]) {
-                    duplication[0] = tmp;
-					return true;
-				} else {
-					swap(tmp, numbers[tmp], numbers);
-					continue;
-				}
-			}
-		}
-		return false;
-    
-    }
-    
-    public void swap(int i, int j, int[] numbers) {
-		int tmp = numbers[i];
-		numbers[i] = numbers[j];
-		numbers[j] = tmp;
-	}
-}
-```
-
-## 二
-
-```java
-public class Solution {
-    public boolean duplicate(int numbers[],int length,int [] duplication) {
-        if (numbers == null || numbers.length == 0) {
-			return false;
-		}
-		for (int i = 0; i < numbers.length; i++) {
-            while (i != numbers[i]) {
-                if (numbers[numbers[i]] == numbers[i]) {
-                    duplication[0] = numbers[i];
-                    return true;
+            return node;
+        } else {
+            while (pNode.next != null) {
+                TreeLinkNode parent = pNode.next;
+                if (parent.left == pNode) {
+                    return parent;
                 }
-                swap(i, numbers[i], numbers);
+                pNode = pNode.next;
             }
-		}
-		return false;
-    
+        }
+        return null;
     }
-    
-    public void swap(int i, int j, int[] numbers) {
-		int tmp = numbers[i];
-		numbers[i] = numbers[j];
-		numbers[j] = tmp;
-	}
 }
 ```
-
-# 
-
-
 
 
 
