@@ -324,39 +324,44 @@ public class Solution {
 
 
 
-# 03.数组中重复的数字
+# 09. 用两个栈实现队列
+
+## 一
+
+```java
+import java.util.Stack;
+
+public class Solution {
+    Stack<Integer> stack1 = new Stack<Integer>();
+    Stack<Integer> stack2 = new Stack<Integer>();
+    
+    public void push(int node) {
+        stack1.push(node);
+    }
+    
+    public int pop() {
+        if (stack2.isEmpty()) {
+            while (!stack1.isEmpty())
+                stack2.push(stack1.pop());
+        }
+        return stack2.pop();
+    }    
+}
+```
+
+
+
+# 10.1 斐波那契数列
 
 ## 一
 
 ```java
 public class Solution {
-    public boolean duplicate(int numbers[],int length,int [] duplication) {
-        if (numbers == null || numbers.length == 0) {
-			return false;
-		}
-		for (int i = 0; i  numbers.length; i++) {
-			int tmp = numbers[i];
-			if (tmp == i) {
-				continue;
-			} else {
-				if (tmp == numbers[tmp]) {
-                    duplication[0] = tmp;
-					return true;
-				} else {
-					swap(tmp, numbers[tmp], numbers);
-					continue;
-				}
-			}
-		}
-		return false;
-    
+    public int Fibonacci(int n) {
+        if (n == 0) return 0;
+        if (n == 1) return 1;
+        return Fibonacci(n - 1) + Fibonacci(n - 2);
     }
-    
-    public void swap(int i, int j, int[] numbers) {
-		int tmp = numbers[i];
-		numbers[i] = numbers[j];
-		numbers[j] = tmp;
-	}
 }
 ```
 
@@ -364,178 +369,509 @@ public class Solution {
 
 ```java
 public class Solution {
-    public boolean duplicate(int numbers[],int length,int [] duplication) {
-        if (numbers == null || numbers.length == 0) {
-			return false;
-		}
-		for (int i = 0; i < numbers.length; i++) {
-            while (i != numbers[i]) {
-                if (numbers[numbers[i]] == numbers[i]) {
-                    duplication[0] = numbers[i];
-                    return true;
-                }
-                swap(i, numbers[i], numbers);
-            }
-		}
-		return false;
-    
+    public int Fibonacci(int n) {
+        if (n <= 1) return n;
+        int[] fib = new int[n + 1];
+        fib[1] = 1;
+        for (int i = 2; i <= n; i++) {
+            fib[i] = fib[i - 1] + fib[i - 2];
+        }
+        return fib[n];
     }
-    
-    public void swap(int i, int j, int[] numbers) {
-		int tmp = numbers[i];
-		numbers[i] = numbers[j];
-		numbers[j] = tmp;
-	}
 }
 ```
 
-# 
+## 三
+
+```java
+public class Solution {
+    public int Fibonacci(int n) {
+        if (n <= 1) return n;
+        int pre1 = 1, pre2 = 0;
+        int fib = 0;
+        for (int i = 2; i <= n; i++) {
+            fib = pre1 + pre2;
+            pre2 = pre1;
+            pre1 = fib;
+        }
+        return fib;
+    }
+}
+```
 
 
 
-
-
-
-
-# 03.数组中重复的数字
+# 10.2 矩形覆盖
 
 ## 一
 
 ```java
-public class Solution {
-    public boolean duplicate(int numbers[],int length,int [] duplication) {
-        if (numbers == null || numbers.length == 0) {
-			return false;
-		}
-		for (int i = 0; i  numbers.length; i++) {
-			int tmp = numbers[i];
-			if (tmp == i) {
-				continue;
-			} else {
-				if (tmp == numbers[tmp]) {
-                    duplication[0] = tmp;
-					return true;
-				} else {
-					swap(tmp, numbers[tmp], numbers);
-					continue;
-				}
-			}
-		}
-		return false;
-    
-    }
-    
-    public void swap(int i, int j, int[] numbers) {
-		int tmp = numbers[i];
-		numbers[i] = numbers[j];
-		numbers[j] = tmp;
-	}
-}
+
 ```
 
 ## 二
 
 ```java
-public class Solution {
-    public boolean duplicate(int numbers[],int length,int [] duplication) {
-        if (numbers == null || numbers.length == 0) {
-			return false;
-		}
-		for (int i = 0; i < numbers.length; i++) {
-            while (i != numbers[i]) {
-                if (numbers[numbers[i]] == numbers[i]) {
-                    duplication[0] = numbers[i];
-                    return true;
-                }
-                swap(i, numbers[i], numbers);
-            }
-		}
-		return false;
-    
-    }
-    
-    public void swap(int i, int j, int[] numbers) {
-		int tmp = numbers[i];
-		numbers[i] = numbers[j];
-		numbers[j] = tmp;
-	}
-}
+
 ```
 
-# 
 
 
-
-
-
-
-
-# 03.数组中重复的数字
+# 10.3 跳台阶
 
 ## 一
 
 ```java
-public class Solution {
-    public boolean duplicate(int numbers[],int length,int [] duplication) {
-        if (numbers == null || numbers.length == 0) {
-			return false;
-		}
-		for (int i = 0; i  numbers.length; i++) {
-			int tmp = numbers[i];
-			if (tmp == i) {
-				continue;
-			} else {
-				if (tmp == numbers[tmp]) {
-                    duplication[0] = tmp;
-					return true;
-				} else {
-					swap(tmp, numbers[tmp], numbers);
-					continue;
-				}
-			}
-		}
-		return false;
-    
-    }
-    
-    public void swap(int i, int j, int[] numbers) {
-		int tmp = numbers[i];
-		numbers[i] = numbers[j];
-		numbers[j] = tmp;
-	}
-}
+
 ```
 
 ## 二
 
 ```java
-public class Solution {
-    public boolean duplicate(int numbers[],int length,int [] duplication) {
-        if (numbers == null || numbers.length == 0) {
-			return false;
-		}
-		for (int i = 0; i < numbers.length; i++) {
-            while (i != numbers[i]) {
-                if (numbers[numbers[i]] == numbers[i]) {
-                    duplication[0] = numbers[i];
-                    return true;
-                }
-                swap(i, numbers[i], numbers);
-            }
-		}
-		return false;
-    
-    }
-    
-    public void swap(int i, int j, int[] numbers) {
-		int tmp = numbers[i];
-		numbers[i] = numbers[j];
-		numbers[j] = tmp;
-	}
-}
+
 ```
 
-# 
+
+
+# 10.4 变态跳台阶
+
+## 一
+
+```java
+2
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
+
+# 1
+
+## 一
+
+```java
+
+```
+
+## 二
+
+```java
+
+```
+
+
+
+
+
+
+
+
 
 
 
