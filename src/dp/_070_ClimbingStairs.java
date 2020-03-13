@@ -11,15 +11,15 @@ public class _070_ClimbingStairs {
     }
 
     public int climbStairs2(int n) {
-        if (n <= 1) {
-            return 1;
+        if (n <= 2) {
+            return n;
         }
-        int oneStep = 1, twoStep = 1, res = 0;
-        for (int i = 2; i <= n; i++) {
-            res = oneStep + twoStep;
-            twoStep = oneStep;
-            oneStep = res;
+        int p1 = 2, p2 = 1;
+        for (int i = 2; i < n; i++) {
+            int res = p1 + p2;
+            p2 = p1;
+            p1 = res;
         }
-        return res;
+        return p1;
     }
 }
