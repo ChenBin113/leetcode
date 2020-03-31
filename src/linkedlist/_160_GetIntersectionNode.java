@@ -3,8 +3,8 @@ package linkedlist;
 import util.ListNode;
 
 public class _160_GetIntersectionNode {
-	//本题的思路是：先分别计算两个结点的长度，并将较长的链表指针移动到相同的长度的结点
-	//开始遍历，判断两个指针指向的结点是否为同一个结点
+    //本题的思路是：先分别计算两个结点的长度，并将较长的链表指针移动到相同的长度的结点
+    //开始遍历，判断两个指针指向的结点是否为同一个结点
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if (headA == null || headB == null) return null;
         int lenA = len(headA);
@@ -20,12 +20,7 @@ public class _160_GetIntersectionNode {
                 lenB--;
             }
         }
-        //注释此处的执行效率居然高于下面的写法，暂时不解
-        //while (headA != headB) {
-        //    headA = headA.next;
-        //    headB = headB.next;
-        //}
-        //return headA;
+
         while (headA != null && headB != null) {
             if (headA == headB) {
                 return headA;
@@ -45,11 +40,11 @@ public class _160_GetIntersectionNode {
         return len;
     }
 
-	//第二次做题
-	public ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
+    //第二次做题
+    public ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
         int len_A = getLength(headA);
         int len_B = getLength(headB);
-        
+
         if (len_A > len_B) {
             int distance = len_A - len_B;
             while (distance != 0) {
@@ -63,15 +58,15 @@ public class _160_GetIntersectionNode {
                 headB = headB.next;
             }
         }
-        
+
         while (headA != headB) {
             headA = headA.next;
             headB = headB.next;
         }
         return headA;
-        
+
     }
-    
+
     public int getLength(ListNode head) {
         int count = 0;
         while (head != null) {
@@ -79,5 +74,23 @@ public class _160_GetIntersectionNode {
             head = head.next;
         }
         return count;
+    }
+
+
+    /**
+     * 循环遍历 headA 和 headB 所在结点，可能出现两种情况：
+     * headA headB 同时为 null
+     * headA headB 遍历到相同的结点
+     * @param headA
+     * @param headB
+     * @return
+     */
+    public ListNode getIntersectionNode3(ListNode headA, ListNode headB) {
+        ListNode l1 = headA, l2 = headB;
+        while (l1 != l2) {
+            l1 = (l1 == null) ? headB : l1.next;
+            l2 = (l2 == null) ? headA : l2.next;
+        }
+        return l1;
     }
 }
