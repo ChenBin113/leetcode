@@ -15,18 +15,7 @@ public class Main {
     ******************************开始写代码******************************/
     static long countDolphin(int n, int m, int[] birthYear, int x) {
         long res = 0;
-        if (m >= x) {
-            res += n;
-            int count = 0;
-            for (int i = 0; i < birthYear.length; i++) {
-                if (birthYear[i] <= x) {
-                    count++;
-                }
-            }
-            res = ( )
-        } else {
-
-        }
+        return res;
     }
 
     /******************************结束写代码******************************/

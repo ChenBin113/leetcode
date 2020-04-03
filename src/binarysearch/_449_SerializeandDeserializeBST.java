@@ -4,7 +4,7 @@ import util.TreeNode;
 
 public class _449_SerializeandDeserializeBST {
 
-    // Encodes a tree to a single string.
+    // Encodes a _01_datastruct.tree to a single string.
     public String serialize(TreeNode root) {
         if (root == null) return "";
         StringBuilder sb = new StringBuilder();
@@ -20,7 +20,7 @@ public class _449_SerializeandDeserializeBST {
         helper(root.right, sb);
     }
 
-    // Decodes your encoded data to tree.
+    // Decodes your encoded data to _01_datastruct.tree.
     public TreeNode deserialize(String data) {
         if (data == null || data.length() == 0) return null;
         String[] strings = data.split("#");

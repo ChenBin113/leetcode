@@ -23,67 +23,67 @@
 
 ## 链表
 
-- 相关代码 [src/linkedlist](./src/linkedlist)
+- 相关代码 [src/_01_datastruct.linkedlist](src/_01_datastruct/linkedlist)
 
 | #    |      |                      | Title                                                        |                            |
 | ---- | ---- | -------------------- | ------------------------------------------------------------ | -------------------------- |
-| 002  | ★★☆  |                      | [AddTwoNumbers](src/linkedlist/_002_AddTwoNumbers.java)      |                            |
-| 019  | ★★☆  |                      | [RemoveNthNodeFromEndofList](src/linkedlist/_019_RemoveNthNodeFromEndofList.java) | 双指针                     |
-| 021  |      | 排序链表的合并       | [MergeTwoSortedLists](src/linkedlist/_021_MergeTwoSortedLists.java) |                            |
-| 023  |      | 排序链表的合并       | [MergekSortedLists](src/linkedlist/_023_MergekSortedLists.java) |                            |
-| 024  | ★★☆  | 两两交换链表中的节点 | [SwapNodesinPairs](src/linkedlist/_024_SwapNodesinPairs.java) | 递归                       |
-| 086  |      | 链表划分             | [PartitionList](src/linkedlist/_086_PartitionList.java)      |                            |
-| 092  | ★★☆  | 链表逆序             | [ReverseLinkedListII](src/linkedlist/_092_ReverseLinkedListII.java) |                            |
-| 138  |      | 复杂的链表的深度拷贝 | [CopyListWithRandomPointer](src/linkedlist/_138_CopyListWithRandomPointer.java) |                            |
-| 141  |      | 链表求环             | [LinkedListCycle](src/linkedlist/_141_LinkedListCycle.java)  |                            |
-| 142  |      | 链表求环             | [LinkedListCycleII](src/linkedlist/_142_LinkedListCycleII.java) |                            |
-| 160  | ★☆☆  | 求两个链表交点       | [GetIntersectionNode](src/linkedlist/_160_GetIntersectionNode.java) |                            |
-| 206  | ★☆☆  | 链表逆序             | [ReverseLinkedList](src/linkedlist/_206_ReverseLinkedList.java) | 就地逆置法；头插法；递归法 |
-| 876  |      |                      | [MiddleoftheLinkedList](src/linkedlist/_876_MiddleoftheLinkedList.java) |                            |
+| 002  | ★★☆  |                      | [AddTwoNumbers](src/_01_datastruct/linkedlist/_002_AddTwoNumbers.java)      |                            |
+| 019  | ★★☆  |                      | [RemoveNthNodeFromEndofList](src/_01_datastruct/linkedlist/_019_RemoveNthNodeFromEndofList.java) | 双指针                     |
+| 021  |      | 排序链表的合并       | [MergeTwoSortedLists](src/_01_datastruct/linkedlist/_021_MergeTwoSortedLists.java) |                            |
+| 023  |      | 排序链表的合并       | [MergekSortedLists](src/_01_datastruct/linkedlist/_023_MergekSortedLists.java) |                            |
+| 024  | ★★☆  | 两两交换链表中的节点 | [SwapNodesinPairs](src/_01_datastruct/_02_linkedlist/_024_SwapNodesinPairs.java) | 递归                       |
+| 086  |      | 链表划分             | [PartitionList](src/_01_datastruct/linkedlist/_086_PartitionList.java)      |                            |
+| 092  | ★★☆  | 链表逆序             | [ReverseLinkedListII](src/_01_datastruct/linkedlist/_092_ReverseLinkedListII.java) |                            |
+| 138  |      | 复杂的链表的深度拷贝 | [CopyListWithRandomPointer](src/_01_datastruct/linkedlist/_138_CopyListWithRandomPointer.java) |                            |
+| 141  |      | 链表求环             | [LinkedListCycle](src/_01_datastruct/linkedlist/_141_LinkedListCycle.java)  |                            |
+| 142  |      | 链表求环             | [LinkedListCycleII](src/_01_datastruct/linkedlist/_142_LinkedListCycleII.java) |                            |
+| 160  | ★☆☆  | 求两个链表交点       | [GetIntersectionNode](src/_01_datastruct/_02_linkedlist/_160_GetIntersectionNode.java) |                            |
+| 206  | ★☆☆  | 链表逆序             | [ReverseLinkedList](src/_01_datastruct/linkedlist/_206_ReverseLinkedList.java) | 就地逆置法；头插法；递归法 |
+| 876  |      |                      | [MiddleoftheLinkedList](src/_01_datastruct/linkedlist/_876_MiddleoftheLinkedList.java) |                            |
 
 ## 数组
 
-- 相关代码 [src/array](src/array)
+- 相关代码 [src/_01_datastruct.array](src/_01_datastruct/array)
 
 | #    |      |          | Title                                                        |      |
 | ---- | ---- | -------- | ------------------------------------------------------------ | ---- |
-| 001  |      |          | [TwoSum](src/array/_001_TwoSum.java)                         |      |
-| 026  |      |          | [RemoveDuplicatesfromSortedArray](src/array/_026_RemoveDuplicatesfromSortedArray.java) |      |
-| 027  |      |          | [RemoveElement](src/array/_027_RemoveElement.java)           |      |
-| 031  |      |          | [NextPermutation](src/array/_031_NextPermutation.java)       |      |
-| 035  |      |          | [SearchInsertPosition](src/array/_035_SearchInsertPosition.java) |      |
-| 054  | ★★☆  | 螺旋数组 | [SpiralMatrix](src/array/_054_SpiralMatrix.java)             |      |
-| 088  |      |          | [MergeSortedArray](src/array/_088_MergeSortedArray.java)     |      |
-| 283  |      |          | [MoveZeroes](src/array/_283_MoveZeroes.java)                 |      |
-| 867  | ★☆☆  |          | [TransposeMatrix](src/array/_867_TransposeMatrix.java)       |      |
+| 001  |      |          | [TwoSum](src/_01_datastruct/_01_array/_001_TwoSum.java)                         |      |
+| 026  |      |          | [RemoveDuplicatesfromSortedArray](src/_01_datastruct/_01_array/_026_RemoveDuplicatesfromSortedArray.java) |      |
+| 027  |      |          | [RemoveElement](src/_01_datastruct/array/_027_RemoveElement.java)           |      |
+| 031  |      |          | [NextPermutation](src/_01_datastruct/array/_031_NextPermutation.java)       |      |
+| 035  |      |          | [SearchInsertPosition](src/_01_datastruct/_01_array/_035_SearchInsertPosition.java) |      |
+| 054  | ★★☆  | 螺旋数组 | [SpiralMatrix](src/_01_datastruct/_01_array/_054_SpiralMatrix.java)             |      |
+| 088  |      |          | [MergeSortedArray](src/_01_datastruct/_01_array/_088_MergeSortedArray.java)     |      |
+| 283  |      |          | [MoveZeroes](src/_01_datastruct/_01_array/_283_MoveZeroes.java)                 |      |
+| 867  | ★☆☆  |          | [TransposeMatrix](src/_01_datastruct/array/_867_TransposeMatrix.java)       |      |
 
 
 
 
 ## 栈-队列
 
-- 相关代码 [src/stack](src/stack)
+- 相关代码 [src/_01_datastruct.stack](src/_01_datastruct/stack)
 
 | #    |                   | Title                                                        |
 | ---- | ----------------- | ------------------------------------------------------------ |
 | 020  |                   | [ValidParentheses](stack/_020_ValidParentheses.java)         |
-| 071  |                   | [SimplifyPath](src/stack/_071_SimplifyPath.java)             |
-| 094  |                   | [BinaryTreeeInorderTraversal](src/stack/_094_BinaryTreeeInorderTraversal.java) |
-| 155  | 包含 min 函数的栈 | [MinStack](src/stack/_155_MinStack.java)                     |
-| 224  | 简单的计算器      | [BasicCalculator](src/stack/_224_BasicCalculator.java)       |
-| 225  | 使用队列实现栈    | [ImplementStackusingQueues](src/stack/_225_ImplementStackusingQueues.java) |
-| 232  | 使用栈实现队列    | [ImplementQueueusingStacks](src/stack/_232_ImplementQueueusingStacks.java) |
-| 946  | 合法的出栈序列    | [ValidateStackSequences](src/stack/_946_ValidateStackSequences.java) |
+| 071  |                   | [SimplifyPath](src/_01_datastruct/stack/_071_SimplifyPath.java)             |
+| 094  |                   | [BinaryTreeeInorderTraversal](src/_01_datastruct/_03_stack/_094_BinaryTreeeInorderTraversal.java) |
+| 155  | 包含 min 函数的栈 | [MinStack](src/_01_datastruct/_03_stack/_155_MinStack.java)                     |
+| 224  | 简单的计算器      | [BasicCalculator](src/_01_datastruct/stack/_224_BasicCalculator.java)       |
+| 225  | 使用队列实现栈    | [ImplementStackusingQueues](src/_01_datastruct/stack/_225_ImplementStackusingQueues.java) |
+| 232  | 使用栈实现队列    | [ImplementQueueusingStacks](src/_01_datastruct/_03_stack/_232_ImplementQueueusingStacks.java) |
+| 946  | 合法的出栈序列    | [ValidateStackSequences](src/_01_datastruct/_03_stack/_946_ValidateStackSequences.java) |
 
 ## 堆
 
-- 相关代码 [src/heap](src/heap)
+- 相关代码 [src/_01_datastruct.heap](src/_01_datastruct/heap)
 
 | #    |      |                   | Title                                                        |      |
 | ---- | ---- | ----------------- | ------------------------------------------------------------ | ---- |
-| 215  |      | 数组中第 k 大的数 | [KthLargestElementinanArray](src/heap/_215_KthLargestElementinanArray.java) |      |
-| 264  |      |                   | [UglyNumberII](src/heap/_264_UglyNumberII.java)              |      |
-| 295  | ★★★  | 寻找中位数        | [FindMedianfromDataStream](src/heap/_295_FindMedianfromDataStream.java) |      |
+| 215  |      | 数组中第 k 大的数 | [KthLargestElementinanArray](src/_01_datastruct/heap/_215_KthLargestElementinanArray.java) |      |
+| 264  |      |                   | [UglyNumberII](src/_01_datastruct/heap/_264_UglyNumberII.java)              |      |
+| 295  | ★★★  | 寻找中位数        | [FindMedianfromDataStream](src/_01_datastruct/heap/_295_FindMedianfromDataStream.java) |      |
 
 ## 贪心算法
 
@@ -135,16 +135,16 @@
 
 ## 哈希表与字符串
 
-- 相关代码 [src/hashtable](src/hashtable)
+- 相关代码 [src/_01_datastruct.hashtable](src/_01_datastruct/hashtable)
 
 | #    |                      | Title                                                        | TAG      |
 | --- | -------------------- | ------------------------------------------------------------ | -------- |
-| 003  | 无重复字符的最长子串 | [LongestSubstringWithoutRepeatingCharacters](src/hashtable/_003_LongestSubstringWithoutRepeatingCharacters.java) | 双指针   |
-| 049  | 同字符词语分组       | [GroupAnagrams](src/hashtable/_049_GroupAnagrams.java)       |          |
-| 076  | 最小覆盖子串         | [MinimumWindowSubstring](src/hashtable/_076_MinimumWindowSubstring.java) | 双指针   |
-| 187  | 重复的 DNA 序列      | [RepeatedDNASequences](src/hashtable/_187_RepeatedDNASequences.java) | 滑动窗口 |
-| 290  | 词语模式             | [WordPattern](src/hashtable/_290_WordPattern.java)           |          |
-| 409  | 最长回文串           | [LongestPalindrome](src/hashtable/_409_LongestPalindrome.java) |          |
+| 003  | 无重复字符的最长子串 | [LongestSubstringWithoutRepeatingCharacters](src/_01_datastruct/hashtable/_003_LongestSubstringWithoutRepeatingCharacters.java) | 双指针   |
+| 049  | 同字符词语分组       | [GroupAnagrams](src/_01_datastruct/hashtable/_049_GroupAnagrams.java)       |          |
+| 076  | 最小覆盖子串         | [MinimumWindowSubstring](src/_01_datastruct/hashtable/_076_MinimumWindowSubstring.java) | 双指针   |
+| 187  | 重复的 DNA 序列      | [RepeatedDNASequences](src/_01_datastruct/hashtable/_187_RepeatedDNASequences.java) | 滑动窗口 |
+| 290  | 词语模式             | [WordPattern](src/_01_datastruct/hashtable/_290_WordPattern.java)           |          |
+| 409  | 最长回文串           | [LongestPalindrome](src/_01_datastruct/hashtable/_409_LongestPalindrome.java) |          |
 
 ## 搜索
 
@@ -177,7 +177,7 @@
 ```
 .
 └─src
-    ├─array
+    ├─_01_datastruct.array
     ├─backtracking
     ├─binarysearch
     ├─bitmanipulation
@@ -185,14 +185,14 @@
     ├─easy
     ├─game  -- 包含 LeetCode 竞赛题目
     ├─greedy
-    ├─hashtable
-    ├─heap
-    ├─linkedlist
+    ├─_01_datastruct.hashtable
+    ├─_01_datastruct.heap
+    ├─_01_datastruct.linkedlist
     ├─search  -- BFS & DFS
     ├─sort
-    ├─stack
+    ├─_01_datastruct.stack
     ├─testdemo  -- 测试类的使用方法
-    ├─tree
+    ├─_01_datastruct._04_tree
     └─util  -- 包含一些需要使用的数据结构类
 ```
 

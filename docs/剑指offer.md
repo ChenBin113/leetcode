@@ -73,18 +73,18 @@ public class Solution {
 
 ```java
 public class Solution {
-    public boolean Find(int target, int [][] array) {
-        if (array == null || array.length == 0) {
+    public boolean Find(int target, int [][] _01_datastruct.array) {
+        if (_01_datastruct.array == null || _01_datastruct.array.length == 0) {
             return false;
         }
-        int row_index = array.length - 1;
-        int col_index = array[0].length - 1;
+        int row_index = _01_datastruct.array.length - 1;
+        int col_index = _01_datastruct.array[0].length - 1;
         int col_start_index = 0;
         
         while (row_index >= 0 && col_start_index <= col_index) {
-            if (array[row_index][col_start_index] == target) {
+            if (_01_datastruct.array[row_index][col_start_index] == target) {
                 return true;
-            } else if (array[row_index][col_start_index] > target) {
+            } else if (_01_datastruct.array[row_index][col_start_index] > target) {
                 row_index--;
             } else {
                 col_start_index++;
@@ -226,14 +226,14 @@ import java.util.ArrayList;
 import java.util.Stack;
 public class Solution {
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
-        Stack<Integer> stack = new Stack<>();
+        Stack<Integer> _01_datastruct.stack = new Stack<>();
         while (listNode != null) {
-            stack.push(listNode.val);
+            _01_datastruct.stack.push(listNode.val);
             listNode = listNode.next;
         }
         ArrayList<Integer> ret = new ArrayList<>();
-        while (!stack.isEmpty()) {
-            ret.add(stack.pop());
+        while (!_01_datastruct.stack.isEmpty()) {
+            ret.add(_01_datastruct.stack.pop());
         }
         return ret;
     }
