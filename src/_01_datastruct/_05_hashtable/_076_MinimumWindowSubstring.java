@@ -1,4 +1,4 @@
-package _01_datastruct.hashtable;
+package _01_datastruct._05_hashtable;
 
 public class _076_MinimumWindowSubstring {
     //public String minWindow(String s, String t) {
