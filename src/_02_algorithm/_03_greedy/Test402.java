@@ -1,4 +1,4 @@
-package greedy;
+package _02_algorithm._03_greedy;
 
 public class Test402 {
     public static void main(String[] args) {

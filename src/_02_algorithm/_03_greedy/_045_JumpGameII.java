@@ -1,6 +1,6 @@
-package greedy;
+package _02_algorithm._03_greedy;
 
-public class _045JumpGameII {
+public class _045_JumpGameII {
     public int jump(int[] nums) {
         if (nums.length < 2) return 0;
         int cur_max_index = nums[0];

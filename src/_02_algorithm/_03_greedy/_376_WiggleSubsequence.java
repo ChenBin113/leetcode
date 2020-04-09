@@ -1,4 +1,4 @@
-package greedy;
+package _02_algorithm._03_greedy;
 
 public class _376_WiggleSubsequence {
     /**

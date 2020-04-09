@@ -1,4 +1,4 @@
-package dp;
+package _02_algorithm._02_dp;
 
 import java.util.HashMap;
 import java.util.HashSet;

@@ -158,13 +158,13 @@
 
 ## 动态规划
 
-- 相关代码 [src/dp](src/dp)
+- 相关代码 [src/_02_algorithm.dp](src/_02_algorithm/dp)
 
 | #    |                      | Title                                                        | TAG      |
 | --- | -------------------- | ------------------------------------------------------------ | -------- |
-| 005 |      | [LongestSubstringWithoutRepeatingCharacters](src/dp/_005_LongestSubstringWithoutRepeatingCharacters.java) |  |
-| 053 |  | [MaximumSubarray](src/dp/_053_MaximumSubarray.java) |  |
-| 070 |  | [ClimbingStairs](src/dp/_070_ClimbingStairs.java) |  |
+| 005 |      | [LongestSubstringWithoutRepeatingCharacters](src/_02_algorithm/dp/_005_LongestSubstringWithoutRepeatingCharacters.java) |  |
+| 053 |  | [MaximumSubarray](src/_02_algorithm/dp/_053_MaximumSubarray.java) |  |
+| 070 |  | [ClimbingStairs](src/_02_algorithm/dp/_070_ClimbingStairs.java) |  |
 
 # 说明
 
@@ -181,7 +181,7 @@
     ├─backtracking
     ├─binarysearch
     ├─bitmanipulation
-    ├─dp
+    ├─_02_algorithm.dp
     ├─easy
     ├─game  -- 包含 LeetCode 竞赛题目
     ├─greedy

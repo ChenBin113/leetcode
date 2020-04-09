@@ -1,4 +1,4 @@
-package dp;
+package _02_algorithm._02_dp;
 
 public class _053_MaximumSubarray {
     //time: O(n) space: O(n)
