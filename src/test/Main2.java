@@ -1,57 +1,39 @@
 package test;
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class Main2 {
-
-
-    /*请完成下面这个函数，实现题目要求的功能
-    当然，你也可以不按照下面这个模板来作答，完全按照自己的想法来 ^-^
-    ******************************开始写代码******************************/
-    static int calcMinStaff(int[][] phoneTime, int length) {
-        int res = 0;
-        int count;
-        for (int i = 0; i < length; i++) {
-            count = 0;
-            int checkNumber = phoneTime[i][0];
-            for (int j = 0; j < length; j++) {
-                if (checkNumber >= phoneTime[j][0] && checkNumber < phoneTime[j][1]) {
-                    count++;
-                }
-            }
-            if (count > res) {
-                res = count;
-            }
-        }
-
-        return res;
-    }
-    /******************************结束写代码******************************/
-
-
-    public static void main(String[] args){
-        Scanner in = new Scanner(System.in);
-
-        int count;
-        count = Integer.parseInt(in.nextLine());
-
-        int[][] phoneTime = new int[count][2];
-
-        for (int i = 0; i < count; i++) {
-            String[] split = in.nextLine().split(",");
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        int x = reader.nextInt();
+        int[][] array = new int[x][2];
+        for (int i = 0; i < x; i++) {
             for (int j = 0; j < 2; j++) {
-                phoneTime[i][j] = Integer.parseInt(split[j]);
+                array[i][j] = reader.nextInt();
             }
         }
-
-        int res;
-        res = calcMinStaff(phoneTime, count);
-        System.out.println(String.valueOf(res));
-
+        System.out.println(maxEnvelopes(array));
     }
+
+    public static int maxEnvelopes(int[][] envelopes) {
+        if (envelopes == null || envelopes.length == 0) return 0;
+        Arrays.sort(envelopes, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[0] == o2[0] ? o1[1] - o2[1] : o1[0] - o2[0];
+            }
+        });
+        Queue<int[]> queue = new LinkedList<>();
+        queue.add(new int[]{envelopes[0][0], envelopes[0][1]});
+        for (int i = 1; i < envelopes.length; i++) {
+            int[] peek = queue.peek();
+            if (peek[0] < envelopes[i][0] && peek[1] < envelopes[i][1]) {
+                queue.poll();
+            }
+            queue.add(new int[]{envelopes[i][0], envelopes[i][1]});
+        }
+        return queue.size();
+    }
+
 }
 

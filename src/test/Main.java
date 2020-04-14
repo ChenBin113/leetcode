@@ -1,49 +1,39 @@
 package test;
 
-// 本题为考试单行多行输入输出规范示例，无需提交，不计分。
-
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
-        int hit;
-        int time;
-
-        while (in.hasNextInt()) {// 注意，如果输入是多个测试用例，请通过while循环处理多个测试用例
-            int n = in.nextInt();
-
-            hit = in.nextInt();
-            time = in.nextInt();
-
-            int[] arr = new int[n];
-
-            for (int i = 0; i < n; i++) {
-                arr[i] = in.nextInt();
-            }
-
-            int ret = killMonster(hit, time, arr);
-            System.out.println(ret);
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String s = br.readLine();
+        String[] str1 = s.split(" ");
+        int[] weights = new int[str1.length];
+        for (int i = 0; i < str1.length; i++) {
+            weights[i] = Integer.parseInt(str1[i]);
         }
+        int maxLoad = Integer.parseInt(br.readLine());
+        int count = countLeastBoat(weights, maxLoad);
+        System.out.println(count);
     }
 
-    private static int killMonster(int hit, int time, int[] arr) {
-        if (arr == null || arr.length == 0 || time <= 0) return 0;
-        Arrays.sort(arr);
-        int i;
-        for (i = 0; i < arr.length; i++) {
-            time--;
-
-            arr[i] -= hit;
-
-            if (arr[i] > 0) {
-                i--;
+    public static int countLeastBoat(int[] weights, int maxLoad) {
+        if (weights == null || weights.length == 0 || maxLoad <= 0) return 0;
+        Arrays.sort(weights);
+        int begin = 0;
+        int end = weights.length - 1;
+        int ret = 0;
+        while (begin <= end) {
+            if ((weights[begin] + weights[end]) <= maxLoad) {
+                begin++;
+                end--;
+            } else {
+                end--;
             }
-
-            if (time == 0) break;
+            ret++;
         }
-        return i + 1;
+        return ret;
     }
 }
